@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BD831A31-6C11-426D-96E6-8496D5D36EA4}</ProjectGuid>
+    <ProjectGuid>{FEBCE9C6-BA48-4C69-80B3-87A4A1ABD32C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BowlingBall</RootNamespace>
-    <AssemblyName>BowlingBall</AssemblyName>
+    <RootNamespace>RollManager</RootNamespace>
+    <AssemblyName>RollManager</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,21 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Game.cs" />
+    <Compile Include="FrameManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Contracts.csproj">
       <Project>{3ab2ea77-f993-4c02-8718-9897c54bfed5}</Project>
       <Name>Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RollManager\FrameManager.csproj">
-      <Project>{febce9c6-ba48-4c69-80b3-87a4a1abd32c}</Project>
-      <Name>FrameManager</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ScoringManager\ScoringManager.csproj">
-      <Project>{e2af0dbc-6b08-4425-a14a-cf7c114cc98d}</Project>
-      <Name>ScoringManager</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
